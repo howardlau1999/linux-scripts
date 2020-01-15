@@ -1,0 +1,25 @@
+:set expandtab
+:set autochdir
+:set sw=4
+:set ts=4
+:set bs=2
+:set autoindent
+:set guifont=Inconsolata:h16
+:colorscheme slate
+:set hlsearch
+:set guioptions-=e
+:set nolist
+:set number
+:syntax on
+:set smartindent
+:set foldmethod=indent
+:set fileencodings=utf-8,gbk2312,gbk,gb18030,cp936
+:set encoding=utf-8
+:set langmenu=en_US
+:let $LANG='en_US.UTF-8'
+:set guioptions-=T
+:set guioptions-=m
+:set guioptions-=L
+:set guioptions-=r
+:set guioptions-=b
+

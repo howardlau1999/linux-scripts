@@ -121,7 +121,6 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 
-[[ -s "/home/howard/.gvm/scripts/gvm" ]] && source "/home/howard/.gvm/scripts/gvm"
 
 source ~/.zplug/init.zsh
 
@@ -140,11 +139,12 @@ if ! zplug check --verbose; then
     fi
 fi
 
-zplug load 
-if [ $commands[kubectl] ]; then source <(kubectl completion zsh); fi
-if [ $commands[kind] ]; then source <(kind completion zsh); fi
-alias proxy="HTTPS_PROXY=http://127.0.0.1:10080"
-alias gpu-server="ssh howard@gpu-server"
+zplug load
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+if [ $commands[kubectl] ]; then source <(kubectl completion zsh); fi
+if [ $commands[kind] ]; then source <(kind completion zsh); fi
+if [ $commands[gh] ]; then source <(gh completion -s zsh); fi
+[[ -s "/home/howard/.gvm/scripts/gvm" ]] && source "/home/howard/.gvm/scripts/gvm"

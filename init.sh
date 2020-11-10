@@ -21,9 +21,9 @@ echo "Installing useful packages..."
 sudo apt-get update
 sudo apt-get install build-essential llvm clang cmake zsh
 echo "Change shell to zsh"
-chsh -s `which zsh
+chsh -s `which zsh`
 echo "Oh my zsh"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 echo "Deep learning things..."
-conda install -y pytorch-nightly-cpu pytorch 
+conda install -y pytorch-nightly-cpu pytorch
 pip install -U tensorflow tensorflow-gpu
